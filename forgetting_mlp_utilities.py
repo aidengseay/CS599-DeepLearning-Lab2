@@ -182,7 +182,7 @@ def summarize_metrics(acc_matrix):
     # backward transfer (BWT):
     BWT = np.mean(acc_matrix[T-1, :T-1] - np.diag(acc_matrix)[:T-1])
 
-    # task wise backward transfer
+    # true backward transfer
     TBWT = (acc_matrix[T-1, :T-1] - np.diag(acc_matrix)[:T-1])
 
     # cumulative backward transfer over time
